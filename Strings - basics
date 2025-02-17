@@ -1,0 +1,46 @@
+strings - skillrack
+
+//comments but here
+questions.
+
+
+
+1
+//FIRST given a string if, 'f' or 'F' FEMALE, THEN 'm' or 'M' comes 
+ MALE else UNKNOWN//
+
+InputLetter=input()
+if InputLetter== 'm' or InputLetter=='M':
+  print("MALE")
+elif InputLetter =='f' or InputLetter=='F':
+  print("FEMALE')
+else:
+  print("UNKNOWN")
+
+2
+//A string value is passed as the input to the program. 
+The program must print YES if the string contains only digits (0 1 2 3 4 5 6 7 8 9). 
+If the string contains any non digit characters, 
+then the program must print NO as the output.//
+
+
+HINT: STRIP CONCEPT IS USED
+[s = input().strip() Meaning:
+input() → Takes input from the user as a string.
+.strip() → Removes leading and trailing whitespace (spaces, tabs, newlines).
+Example:
+Without .strip()
+python
+Copy code
+s = input()  # User enters: "  12345  "
+print(s)     # Output: "  12345  " (spaces remain)]
+
+strval = input().strip()
+if strval.isdigit():
+    print("YES")
+else:
+    print("NO")
+
+
+//
+
