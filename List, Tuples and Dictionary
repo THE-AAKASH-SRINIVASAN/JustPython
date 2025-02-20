@@ -35,7 +35,27 @@ for num in numbers:
 
 
 //
+len method can be used to find the length of a list or a tupule.
+
+The below program prints 5 as the output as there are 5 elements in the tupule cities.
+//
+cities = ("Delhi","Mumbai","Chennai","Pune","Jaipur")
+print (len(cities))
+
 
 //
+Fill in the missing no of code? so and so
+len comes as 10 as the length of the output. 
+//
+
+numbers = [100,200,300,400,500]
+numbers=(100,200,300,400,500,600,700,800,900,1000)
+print (len(numbers))
+
+
+//
+
+//
+
 
 
