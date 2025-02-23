@@ -107,5 +107,19 @@ for num in numbers:
 
 
 9//
+Fill in the missing lines of code to initialize a dictionary 
+studentages so that the program prints 15 12 as the output.
+//
+
+
+studentages={"Leena":15,"Arun":12}
+print (studentages["Leena", end=""])
+print (studentages["Arun", end=""])
+
 
 //
+Fill in the missing lines of code so that the program prints 120 as the output.
+//
+
+
+
