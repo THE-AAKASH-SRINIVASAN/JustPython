@@ -122,4 +122,28 @@ Fill in the missing lines of code so that the program prints 120 as the output.
 //
 
 
+marks={"Leena":45,"Arun":30}
+marks[Arun]=75;
+print (marks[Leena]+marks[Arun])
+
+
+
+//
+Fill in the missing lines of code so that the program prints the value for the single key in the
+dictionary namelocation where the key name starts with K. 
+Example Input/Output: 
+Input: Arun Chennai Babu Trichy Karthik Tirunelveli Thaslim Salem Fathima Madurai 
+Output: Tirunelveli
+//
+
+
+input_data = "Arun Chennai Babu Trichy Karthik Tirunelveli Thaslim Salem Fathima Madurai"
+data_list = input_data.split(" ")
+name_location = {data_list[i]: data_list[i+1] for i in range(0, len(data_list), 2)}
+output = ""
+for key in name_location:
+    if key.startswith("K"):
+      print(name_location[key]),end=" ")
+
+
 
