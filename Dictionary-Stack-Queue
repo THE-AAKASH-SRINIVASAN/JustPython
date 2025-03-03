@@ -53,3 +53,27 @@ for index in range (0, len(inputpairs),2):
 itemprice = collections.OrderedDict(inputlist)
 for key in itemprice.keys():
  print (key+" "+itemprice[key])
+
+
+4//
+Initialize the values for variables x,y and z so that 
+the output of the program is 900 500 700//
+
+
+
+x=500
+y=700
+z=900
+stack = []
+stack.append(y)
+stack.append(z)
+print (stack.pop(), end=" ")
+stack.append(x)
+print (stack.pop(), end=" ")
+print (stack.pop(), end=" ")
+
+
+
+5//
+
+//
