@@ -22,3 +22,43 @@ Why Use enumerate()?
 ✅ Tracks both index and value (no need for range(len(s))).
 ✅ More readable and Pythonic compared to manually managing indices.
 ✅ Efficient in loops when both index and value are needed.
+
+
+#First Non-Repeating Character in a String
+#-----------------------------------------#
+#Problem:
+#Given a string, find the first non-repeating character and return its index. If all characters repeat, return -1.
+
+#Example 1:
+#Input: s = "leetcode"
+#Output: 0
+#Explanation: The first non-repeating character is 'l', which appears at index 0.
+
+#Example 2:
+#Input: s = "loveleetcode"
+#Output: 2
+#Explanation: The first non-repeating character is 'v', which appears at index 2.
+
+#Example 3:
+#Input: s = "aabb"
+#Output: -1
+#Explanation: All characters repeat, so return -1.
+
+def first_uniq_char(s): #function is created along with string as 's' inside the parenthis
+
+    char_count={} #dictionary is initaileized
+    
+    for char in s: #to check whether there is a charcter in string
+        char_count[char] = char_count.get(char, 0) + 1 #.get is used to check whether the value associated with the key is present - if the letter is present '1' is added if not '0'. 
+    
+    for i,char in enumerate(s): #both character and index values are tracked 
+        if char_count[char]==1:
+            return i 
+    return -1 #if all are same return -1
+    
+
+print(first_uniq_char("ByeByeBye"))
+print(first_uniq_char("DraxTheDestroyer"))
+print(first_uniq_char("Loki"))
+print(first_uniq_char("deadpool"))
+print(first_uniq_char("RocketRacoon"))
