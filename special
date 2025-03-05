@@ -18,3 +18,7 @@ Index: 9, Character: o
 Index: 10, Character: d
 Index: 11, Character: e
 
+Why Use enumerate()?
+✅ Tracks both index and value (no need for range(len(s))).
+✅ More readable and Pythonic compared to manually managing indices.
+✅ Efficient in loops when both index and value are needed.
