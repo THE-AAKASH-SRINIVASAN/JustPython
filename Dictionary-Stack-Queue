@@ -143,21 +143,7 @@ for m in marks:
 
 
 
-9//
-Given an array of positive integers arr[] of size n, the 
-task is to find second largest distinct element in the array.
-Note: If the second largest element does not exist, return -1.
-//
-
-def sec_lar(arr):
-    uniq=list(set(arr))
-    if len(uniq)<2:
-        return -1
-    uniq.sort(reverse=True)
-    return uniq[1]
-    
-arr=[10,20,4,45,99,99,10]
-print(sec_lar(arr))
+9
 
 
 10
