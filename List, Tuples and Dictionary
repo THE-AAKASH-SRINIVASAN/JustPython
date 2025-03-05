@@ -18,7 +18,6 @@ for num in numbers[::-1]:
     if num % 2 == 0:
         print(num,end=" ")
 
-
 2//
 Fill in the misssing lines of code so that the
 program prints 100 300 500 as the output
@@ -144,6 +143,17 @@ output = ""
 for key in name_location:
     if key.startswith("K"):
       print(name_location[key]),end=" ")
+
+
+//
+.get()  in dictionary
+//
+
+student_marks={"Herold": 85, "Pathiban": 100, "Leo":70}
+print(student_marks.get("Parthiban"))
+
+
+
 
 
 
