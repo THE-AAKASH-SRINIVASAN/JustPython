@@ -141,9 +141,36 @@ total = 0
 for m in marks: 
   total+=m print (total)
 
+9//
+Initialize variables a,b,x,y so that the program prints 50 as the output.
+//
+
+x=10
+y=1
+a=5
+b=2
+numberpairs = {}
+numberpairs[y] = x
+numberpairs[b] = a
+product = 1
+for key,val in numberpairs.items():
+    product*=val
+print (product)
 
 
-9
+10//
+THE OUTPUT SHOULD BE PRINTED AS 
+Apple
+NOTPRESENT
+NOTPRESENT
+Eagle 
+//
 
 
-10
+letterword={}
+defaultvalue="NOTPRESENT"
+letterword = {"A":"Apple", "E":"Eagle", "S":"Snake"}
+print (letterword.get("A",defaultvalue))   
+print (letterword.get("B",defaultvalue))  
+print (letterword.get("R",defaultvalue))   
+print (letterword.get("E",defaultvalue))
