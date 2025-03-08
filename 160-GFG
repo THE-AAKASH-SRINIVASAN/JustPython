@@ -69,3 +69,25 @@ if __name__=="__main__":
   pushZerosToEnd(arr)
   for num in arr():
      print(num,end=" ") 
+
+
+
+
+DAY - 3
+
+//
+REVERSE AN ARRAY
+//
+
+def reverseArray(arr):
+    left,right=0, len(arr)-1
+    while left<right:
+        arr[left],arr[right]=arr[right],arr[left]
+        left+=1
+        right-=1
+    return arr
+arr=[1,2,3,4,5,6]
+reverseArray(arr)
+print("Reversed Array:")
+for i in range(len(arr)):
+    print(arr[i],end=" ")
