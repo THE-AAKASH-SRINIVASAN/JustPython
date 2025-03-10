@@ -1,3 +1,7 @@
+all the codes are done without class few may be - but the matter is 
+it is important to learn along with driver code
+
+
 Day 1 - Second Largest Element
 ARRAYS
 
@@ -91,3 +95,37 @@ reverseArray(arr)
 print("Reversed Array:")
 for i in range(len(arr)):
     print(arr[i],end=" ")
+
+
+
+
+DAY - 4
+
+//
+Rotate an array
+//
+
+1st approch - Juggling algorithm
+
+
+
+
+2nd approch - reversal alogorithm
+
+def rotate(arr,d):
+    n=len(arr)
+    d%=n
+    
+    reverse(arr,0,d-1)
+    reverse(arr,d,n-1)
+    reverse(arr,0,n-1)
+    
+def reverse(arr,start,end):
+    while start<end:
+        arr[start],arr[end]=arr[end],arr[start]
+        start+=1
+        end-=1
+        
+arr=[1,2,3,4,5,6]
+rotate(arr,3)
+print(arr)
