@@ -239,3 +239,17 @@ if __name__=="__main__":
     output=heights(arr,k)
     print(output)
     
+
+
+def maxSubArraySum(self, arr):
+    if not arr:  # Handle empty array case
+        return 0  
+    
+    res = arr[0]
+    maxEnding = arr[0]
+
+    for i in range(1, len(arr)):
+        maxEnding = max(maxEnding + arr[i], arr[i])
+        res = max(res, maxEnding)
+
+    return res
