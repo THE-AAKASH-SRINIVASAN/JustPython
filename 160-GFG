@@ -253,3 +253,33 @@ def maxSubArraySum(self, arr):
         res = max(res, maxEnding)
 
     return res
+
+
+Travesing in both direction to find the Max Product Sub-array 
+
+def maxProduct(arr):
+    n=len(arr)
+    maxProd=float('-inf')
+    
+    LtoR=1
+    RtoL=1
+    
+    for i in range(n):
+        if LtoR==0:
+            LtoR=1
+        if RtoL==0:
+            RtoL=1
+        
+        LtoR*=arr[i]
+        
+        j=n-i-1
+        
+        RtoL*=arr[j]
+        
+        maxProd=max(LtoR,RtoL,maxProd)
+    
+    return maxProd
+    
+if __name__=="__main__":
+    arr=[-2,6,-3,-10,0,2]
+    print(maxProduct(arr))
